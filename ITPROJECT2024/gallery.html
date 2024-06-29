@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          
+          .topnav {
+            overflow: hidden;
+            background-color: #333;
+          }
+          
+          .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+          }
+          
+          .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+          }
+          
+          .topnav a.active {
+            background-color: #00000000;
+            color: white;
+          }
+          footer {
+            background-color: #f9f9f9;
+            padding: 20px 0;
+            border-top: 1px solid #ccc;
+        }
+        
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        
+        .footer-logo h2 {
+            font-size: 36px;
+            margin: 0;
+        }
+        
+        .social-icons a img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .footer-column {
+            margin-right: 40px;
+        }
+        
+        .footer-column h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 5px;
+        }
+        
+        .footer-column ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid #ccc;
+            padding: 10px;
+        }
+        
+        .footer-bottom p {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .footer-bottom ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        
+        .footer-bottom ul li {
+            margin-left: 15px;
+        }
+        
+        .footer-bottom ul li a {
+            text-decoration: none;
+            color: #666;
+            font-size: 14px;
+        }
+        .h1gallery{
+            padding-left: 20px;
+         }
+         .gallery {
+           display: grid;
+           grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+           gap: 20px;
+           padding: 20px;
+         }
+         
+         .gallery-item {
+           position: relative;
+           overflow: hidden;
+           border-radius: 5px;
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+           transition: transform 0.3s ease;
+         }
+         
+         .gallery-item img {
+           width: 100%;
+           height: auto;
+           display: block;
+           cursor: pointer;
+         }
+         
+         .gallery-item:hover {
+           transform: translateY(-5px);
+         }
+         
+         /* Fullscreen overlay styles */
+         .fullscreen {
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background-color: rgba(0, 0, 0, 0.9);
+           display: none;
+           justify-content: center;
+           align-items: center;
+           z-index: 1200;
+           overflow: hidden;
+         }
+         
+         .fullscreen img {
+           max-width: 90%;
+           max-height: 90%;
+           object-fit: contain;
+         }
+         
+         .close-btn {
+           position: absolute;
+           top: 20px;
+           right: 20px;
+           color: white;
+           font-size: 30px;
+           cursor: pointer;
+         }
+       
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href=""  target="_blank">News</a>
+        <a href="ok.html" target="_blank">Cover</a>
+        <a href="about.html" target="_blank">About</a>
+        <a href="login.html" target="_blank">register now</a>
+      </div>
+      
+      <div class="container">
+        <h1 class="h1gallery">Gallery</h1>
+        <section class="gallery">
+            <div class="gallery-item">
+                <img src="ho.jpg"Image 1" onclick="openFullscreen(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="he.jpg" alt="Image 2" onclick="openFullscreen(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="hee.jpg" alt="Image 3" onclick="openFullscreen(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="ho.jpg" alt="Image 4" onclick="openFullscreen(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="hi.jpg" alt="Image 5" onclick="openFullscreen(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="ho.jpg" alt="Image 6" onclick="openFullscreen(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="hee.jpg" alt="Image 7" onclick="openFullscreen(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="one.jpg" alt="Image 8" onclick="openFullscreen(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="one.jpg" alt="Image 9" onclick="openFullscreen(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="proj.jpg" alt="Image 10" onclick="openFullscreen(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="three.jpg" alt="Image 11" onclick="openFullscreen(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="two.jpg" alt="Image 12" onclick="openFullscreen(this.src)">
+            </div>
+        </section>
+    </div>
+    
+        <div class="fullscreen" id="fullscreen">
+            <span class="close-btn" onclick="closeFullscreen()">&times;</span>
+            <img src="" alt="Fullscreen Image">
+        </div>
+    
+        
+    
+        
+            </div>
+        </div>
+
+    <script>
+        function openFullscreen(imageSrc) {
+            const fullscreen = document.getElementById('fullscreen');
+            fullscreen.querySelector('img').src = imageSrc;
+            fullscreen.style.display = 'flex';
+        }
+    
+        function closeFullscreen() {
+            document.getElementById('fullscreen').style.display = 'none';
+        }
+    <hr>
+    
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h2>CHRON.</h2>
+            <div class="social-icons">
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="download.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram.jpeg" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Our Company</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Our Use of AI</a></li>
+                    <li><a href="#">Ethics Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Advertise with Us</a></li>
+                    <li><a href="#">Email Newsletters</a></li>
+                    <li><a href="#">Sponsor Content</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy;  OUTVADEH </p>
+        <ul>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Notice</a></li>
+            <li><a href="#">Interest Based Ads</a></li>
+      
+        </ul>
+    </div>
+  </footer>
+
+</body>
+
+
+
+</html>

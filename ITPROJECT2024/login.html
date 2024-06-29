@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Register now</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Jade website template">
+    <meta name="keywords" content="apollo, jade, template, html, sass, jquery">
+    <meta name="author" content="Bucky Maler">
+    <link rel="stylesheet" href="main.css">
+    <script src="functions.js"></script>
+    <script src="functions-min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      .topnav a.active {
+        background-color: #00000000;
+        color: white;
+      }
+      footer {
+        background-color: #f9f9f9;
+        padding: 20px 0;
+        border-top: 1px solid #ccc;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    
+    .footer-logo h2 {
+        font-size: 36px;
+        margin: 0;
+    }
+    
+    .social-icons a img {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+    
+    .footer-links {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .footer-column {
+        margin-right: 40px;
+    }
+    
+    .footer-column h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .footer-column ul li {
+        margin-bottom: 5px;
+    }
+    
+    .footer-column ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+        border-top: 1px solid #ccc;
+        padding: 10px;
+    }
+    
+    .footer-bottom p {
+        margin: 0;
+        font-size: 14px;
+        color: #666;
+    }
+    
+    .footer-bottom ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    .footer-bottom ul li {
+        margin-left: 15px;
+    }
+    
+    .footer-bottom ul li a {
+        text-decoration: none;
+        color: #666;
+        font-size: 14px;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+    }
+    
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    input[type="text"],
+    input[type="password"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+    
+    select {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 16px;
+        background-color: #fff;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    
+    textarea {
+        resize: vertical;
+    }
+    
+    input[type="submit"],
+    input[type="reset"],
+    input[type="checkbox"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    input[type="submit"]:hover,
+    input[type="reset"]:hover,
+    input[type="checkbox"]:hover {
+        background-color: #0056b3;
+    }
+    
+    .error-message {
+        color: red;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="index.html">Home</a>
+      <a href=""  target="_blank">News</a>
+      <a href="ok.html" target="_blank">Cover</a>
+      <a href="about.html" target="_blank">About</a>
+      <a href="register.html" target="_blank">register now</a>
+    </div>
+    
+
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content=
+            "width=device-width, initial-scale=1.0" />
+        <title>Form Validation</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    
+    <body>
+        <h1>REGISTRATION FORM</h1>
+        <form name="RegForm" onsubmit="return validateForm()">
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="Name" 
+                    placeholder="Enter your full name" />
+                <span id="name-error" class="error-message"></span>
+            </p>
+            <p>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="Address" 
+                    placeholder="Enter your address" />
+                <span id="address-error" class="error-message"></span>
+            </p>
+            <p>
+                <label for="email">E-mail Address:</label>
+                <input type="text" id="email" name="EMail" 
+                    placeholder="Enter your email" />
+                <span id="email-error" class="error-message"></span>
+            </p>
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" placeholder="Enter your password" id="password" name="Password" />
+                <span id="password-error" class="error-message"></span>
+            </p>
+            <p>
+                <label for="subject">Select Your Course:</label>
+                <select id="subject" name="Subject">
+                    <option value="">
+                        Select Course
+                    </option>
+                    <option value="BTECH">
+                        BTECH
+                    </option>
+                    <option value="BBA">
+                        BBA
+                    </option>
+                    <option value="BCA">
+                        BCA
+                    </option>
+                    <option value="B.COM">
+                        B.COM
+                    </option>
+                </select>
+                <span id="subject-error" class="error-message"></span>
+            </p>
+            <p>
+                <label for="comment">College Name:</label>
+                <textarea id="comment" name="Comment"></textarea>
+            </p>
+            <p>
+                <input type="checkbox" id="agree" name="Agree" />
+                <label for="agree">I agree to the above
+                    information</label>
+                <span id="agree-error" class="error-message"></span>
+            </p>
+            <p>
+                <input type="submit" value="Send" name="Submit" />
+                <input type="reset" value="Reset" name="Reset" />
+            </p>
+        </form>
+        <script >
+            function validateForm() {
+                const name = document.getElementById("name").value;
+                const address = document.getElementById("address").value;
+                const email = document.getElementById("email").value;
+                const password = document.getElementById("password").value;
+                const subject = document.getElementById("subject").value;
+                const agree = document.getElementById("agree").checked;
+                const nameError = document.getElementById("name-error");
+                
+                const addressError = document.getElementById(
+                    "address-error"
+                );
+                const emailError = document.getElementById(
+                    "email-error"
+                );
+                const passwordError = document.getElementById(
+                    "password-error"
+                );
+                const subjectError = document.getElementById(
+                    "subject-error"
+                );
+                const agreeError = document.getElementById(
+                    "agree-error"
+                );
+            
+                nameError.textContent = "";
+                addressError.textContent = "";
+                emailError.textContent = "";
+                passwordError.textContent = "";
+                subjectError.textContent = "";
+                agreeError.textContent = "";
+            
+                let isValid = true;
+            
+                if (name === "" || /\d/.test(name)) {
+                    nameError.textContent =
+                        "Please enter your name properly.";
+                    isValid = false;
+                }
+            
+                if (address === "") {
+                    addressError.textContent =
+                        "Please enter your address.";
+                    isValid = false;
+                }
+            
+                if (email === "" || !email.includes("@")) {
+                    emailError.textContent =
+                        "Please enter a valid email address.";
+                    isValid = false;
+                }
+            
+                if (password === "" || password.length < 6) {
+                    passwordError.textContent =
+                        "Please enter a password with at least 6 characters.";
+                    isValid = false;
+                }
+            
+                if (subject === "") {
+                    subjectError.textContent =
+                        "Please select your course.";
+                    isValid = false;
+                }
+            
+                if (!agree) {
+                    agreeError.textContent =
+                        "Please agree to the above information.";
+                    isValid = false;
+                }
+            
+                return isValid;
+            }
+        </script>
+    </body>
+    
+    </html>
+     
+   
+   
+    <div class="footer-container">
+      <div class="footer-logo">
+          <h2>CHRON.</h2>
+          <div class="social-icons">
+              <a href="#"><img src="facebook.png" alt="Facebook"></a>
+              <a href="#"><img src="download.png" alt="Twitter"></a>
+              <a href="#"><img src="instagram.jpeg" alt="Instagram"></a>
+          </div>
+      </div>
+      <div class="footer-links">
+          <div class="footer-column">
+              <h3>About</h3>
+              <ul>
+                  <li><a href="#">Our Company</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Our Use of AI</a></li>
+                  <li><a href="#">Ethics Policy</a></li>
+              </ul>
+          </div>
+          <div class="footer-column">
+              <h3>Contact</h3>
+              <ul>
+                  <li><a href="#">Customer Service</a></li>
+                  <li><a href="#">Contact Us</a></li>
+              </ul>
+          </div>
+          <div class="footer-column">
+              <h3>Services</h3>
+              <ul>
+                  <li><a href="#">Advertise with Us</a></li>
+                  <li><a href="#">Email Newsletters</a></li>
+                  <li><a href="#">Sponsor Content</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; OUTVADEH</p>
+      <ul>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Notice</a></li>
+          <li><a href="#">Interest Based Ads</a></li>
+
+      </ul>
+  </div>
+</footer>
+  </body>
+</html>

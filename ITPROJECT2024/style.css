@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0bccee;
+    border-bottom: 1px solid #ccc;
+}
+.okkk{
+    width: 100%;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 36px;
+    color: rgb(124, 225, 24);
+}
+
+.logo h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+}
+
+.projects {
+    text-align: center;
+}
+
+.projects h2 {
+    color: red;
+    font-size: 32px;
+}
+
+.projects p {
+    font-size: 18px;
+    color: #333;
+}
+
+.project {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.project img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.project-description {
+    margin-top: 10px;
+}
+
+.project-description h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.project-description p {
+    font-size: 16px;
+    color: #666;
+}
+footer {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.footer-logo h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    margin-right: 40px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer-bottom ul li {
+    margin-left: 15px;
+}
+
+.footer-bottom ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+}
